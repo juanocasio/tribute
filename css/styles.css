@@ -1,0 +1,239 @@
+/*General base styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-family: 'karla', 'Ariel', sans-serif;
+  color: #555;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+
+/*   header section */
+header {
+    background-image: linear-gradient(rgba(0,0,0, 0.35),rgba(0,0,0, 0.15)), url(/images/hester.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    margin-top: 20px;
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+.nav-main {
+    margin-top: 58px;
+    float: right;
+    list-style: none;
+    
+}
+
+.nav-main li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.nav-main li a:link,
+.nav-main li a:visited {
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 85%;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s; 
+    -moz-transition: background-color 0.2s, border 0.2s, color 0.2s; 
+    transition: background-color 0.2s, border 0.2s, color 0.2s; 
+}
+
+.nav-main li a:hover,
+.nav-main li a:active {
+    border-bottom: 2px solid #55744e;
+}
+
+/*Body styles */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Body Style - About section */
+
+.features {
+    padding: 80px 0;
+}
+
+h1, 
+h2,
+h3 {
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #6B9362;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+p {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+}
+
+blockquote {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 30px;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  line-height: 1.5em;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+/* Body styles - image section */
+
+.image-section {
+    padding: 0;    
+}
+
+.image-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.image-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.photos {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.photos img {
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.photos img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* FOOTER */
+
+.social-links span {
+    color: #55744e;
+}
+
+/* Button Styles */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 125%;
+    font-weight: normal;
+    text-decoration: none;
+    border-radius: 100px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s; 
+    -moz-transition: background-color 0.2s, border 0.2s, color 0.2s; 
+    transition: background-color 0.2s, border 0.2s, color 0.2s;     
+}
+
+.btn-full:link,
+.btn-full:visited {
+    margin-right: 15px;
+    border: 1px solid #6B9362;
+    background-color: #6B9362;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {  
+    border: 1px solid #6B9362;
+    color: #55744e;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #55744e;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #55744e;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {  
+    border: 1px solid #5a6d22;
+    color: #fff;
+}
+
